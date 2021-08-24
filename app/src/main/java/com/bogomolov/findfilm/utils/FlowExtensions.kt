@@ -5,6 +5,7 @@ import android.text.TextWatcher
 import android.widget.EditText
 import android.widget.RadioGroup
 import com.bogomolov.findfilm.R
+import com.bogomolov.findfilm.data.MovieType
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.sendBlocking

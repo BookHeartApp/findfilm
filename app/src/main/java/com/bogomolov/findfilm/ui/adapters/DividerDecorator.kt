@@ -13,10 +13,10 @@ class DividerDecorator(private val context: Context) : RecyclerView.ItemDecorati
         parent: RecyclerView,
         state: RecyclerView.State
     ) {
-        val offset = 8
+        val OFFSET = 8
         with(outRect) {
-            top = offset.dpToPixels(context)
-            bottom = offset.dpToPixels(context)
+            top = OFFSET.dpToPixels(context)
+            bottom = OFFSET.dpToPixels(context)
         }
     }
 

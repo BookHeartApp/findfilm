@@ -3,6 +3,7 @@ package com.bogomolov.findfilm.ui.adapters
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bogomolov.findfilm.R
+import com.bogomolov.findfilm.data.Movie
 import com.bogomolov.findfilm.databinding.ItemMovieBinding
 
 class MovieViewHolder(

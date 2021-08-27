@@ -3,6 +3,7 @@ package com.bogomolov.findfilm.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bogomolov.findfilm.data.Movie
 import com.bogomolov.findfilm.databinding.ItemMovieBinding
 
 class MovieAdapter(

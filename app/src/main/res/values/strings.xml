@@ -2,9 +2,11 @@
     <string name="app_name">findfilm</string>
     <string name="addsearch">Введите поисковый запрос...</string>
     <string name="movie_search">Поиск фильмов</string>
-    <string name="movie">Фильм</string>
-    <string name="series">Сериал</string>
-    <string name="episode">Эпизод</string>
+    <string name="movie">Фильмы</string>
+    <string name="series">Сериалы</string>
+    <string name="episode">Эпизоды</string>
     <string name="spacelist">Список пуст</string>
     <string name="cancel">отмена</string>
+    <string name="all_movies">Фильмы на устройстве</string>
+    <string name="no_network_toast">Отсутствует сеть. Поиск выполняется по локальной БД</string>
 </resources>

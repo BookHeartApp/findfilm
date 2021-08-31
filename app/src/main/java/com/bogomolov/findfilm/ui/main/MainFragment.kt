@@ -7,6 +7,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.bogomolov.findfilm.R
 import com.bogomolov.findfilm.databinding.FragmentMainBinding
 import com.bogomolov.findfilm.ui.adapters.MoviePagerAdapter
+import com.bogomolov.findfilm.ui.allMovies.AllMoviesFragment
+import com.bogomolov.findfilm.ui.search.SearchFragment
 import com.bogomolov.findfilm.utils.FragmentViewBinding
 
 class MainFragment : FragmentViewBinding<FragmentMainBinding>(FragmentMainBinding::inflate) {
@@ -22,7 +24,8 @@ class MainFragment : FragmentViewBinding<FragmentMainBinding>(FragmentMainBindin
 
     private fun createFragmentList() {
         fragmentList = mutableListOf(
-
+            SearchFragment() to getString(R.string.movie_search),
+            AllMoviesFragment() to getString(R.string.all_movies)
         )
     }
 

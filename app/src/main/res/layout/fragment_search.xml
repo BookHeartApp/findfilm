@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="#2196F3">
+
     <com.google.android.material.textfield.TextInputLayout
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,30 +25,33 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
-        app:layout_constraintTop_toBottomOf="@id/inputLayout"
-        app:layout_constraintStart_toStartOf="@id/inputLayout"
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/inputLayout"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout">
 
         <RadioButton
             android:id="@+id/radioMovie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/movie" />
+            android:text="@string/movie"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioSeries"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/series" />
+            android:text="@string/series"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioEpisode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/episode" />
+            android:text="@string/episode"
+            android:textColor="@color/white" />
     </RadioGroup>
 
     <TextView
@@ -68,7 +73,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         tools:itemCount="4"
-        tools:listitem="@layout/item_movie" />
+        tools:listitem="@layout/item_movie"
+        />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -88,6 +94,7 @@
         android:text="@string/cancel"
         android:visibility="gone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
